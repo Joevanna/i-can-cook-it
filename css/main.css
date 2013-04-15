@@ -1,0 +1,500 @@
+/*-- General Styling --*/
+body {
+    background-color: #ff4000;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 64, 0)), to(rgb(213, 180, 62)));
+    background-image: -webkit-linear-gradient(top, rgb(255, 64, 0), rgb(213, 180, 62));
+    background-image: -moz-linear-gradient(top, rgb(255, 64, 0), rgb(213, 180, 62));
+    background-image: -o-linear-gradient(top, rgb(255, 64, 0), rgb(213, 180, 62));
+    background-image: -ms-linear-gradient(top, rgb(255, 64, 0), rgb(213, 180, 62));
+    background-image: linear-gradient(top, rgb(255, 64, 0), rgb(213, 180, 62));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ff4000', EndColorStr='#d5b43e');
+    font-family: 'Maven Pro', sans-serif;
+}
+
+header {
+    overflow: hidden;
+    background-color: #f3f1a7;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(243, 241, 167)), to(rgb(242, 204, 72)));
+    background-image: -webkit-linear-gradient(top, rgb(243, 241, 167), rgb(242, 204, 72));
+    background-image: -moz-linear-gradient(top, rgb(243, 241, 167), rgb(242, 204, 72));
+    background-image: -o-linear-gradient(top, rgb(243, 241, 167), rgb(242, 204, 72));
+    background-image: -ms-linear-gradient(top, rgb(243, 241, 167), rgb(242, 204, 72));
+    background-image: linear-gradient(top, rgb(243, 241, 167), rgb(242, 204, 72));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f3f1a7', EndColorStr='#f2cc48');
+    box-shadow: #888 1px 1px 5px; 
+}
+
+.clearfix {
+    clear:both;
+}
+
+h1, h2, h3 {
+    font-family: 'Cabin Sketch', cursive;
+    color: #f03;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+/* -- Social Sprites --*/
+
+.social li {
+    background: url(../img/social-sprite.png) no-repeat;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-indent: -9999px;
+}
+
+.social .facebook {
+    background-position: -42px -5px;
+}
+
+.social .facebook:hover {
+    background-position: 0px -5px;
+}
+
+.social .twitter {
+    background-position: -213px -5px;
+}
+
+.social .twitter:hover {
+    background-position: -171px -5px;
+}
+
+.social .pinterest {
+    background-position: -132px -5px;
+}
+
+.social .pinterest:hover {
+    background-position: -90px -5px;
+}
+
+/* Recipes UL Styling --*/
+
+img {
+    border-radius: 15px;
+    border: 2px solid #930;
+}
+
+.recipe {
+  overflow: hidden;
+}
+
+.recipe .details {
+        display: none;
+    }
+
+/*-- Paginator Styling --*/
+
+.paginator {
+    width: 100%;
+    text-align: center;
+}
+
+#form, #steps-preview, #cooking-steps {
+    display: none;
+}
+
+/*-- Footer Styling --*/
+
+footer {
+    display: block;
+    text-align: center;
+}
+
+/*-- Buttons Styling --*/
+
+.recipe .details .preview-button, .button {
+    color: white;
+    text-shadow: #888 2px 2px 2px;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ff9900;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(36, 100%, 50%)), to(hsl(12, 100%, 50%)));
+    background-image: -webkit-linear-gradient(top, hsl(36, 100%, 50%), hsl(12, 100%, 50%));
+    background-image: -moz-linear-gradient(top, hsl(36, 100%, 50%), hsl(12, 100%, 50%));
+    background-image: -o-linear-gradient(top, hsl(36, 100%, 50%), hsl(12, 100%, 50%));
+    background-image: -ms-linear-gradient(top, hsl(36, 100%, 50%), hsl(12, 100%, 50%));
+    background-image: linear-gradient(top, hsl(36, 100%, 50%), hsl(12, 100%, 50%));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ff9900', EndColorStr='#ff3300');
+    box-shadow: 2px 2px 8px #888;
+}
+
+.recipe .details .button {
+    width: 140px;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+}
+
+/*-- Media Queries --*/
+@media only screen and (min-width: 320px) {
+
+    .recipe {
+        text-align: center;
+    }
+
+    .recipe > img {
+      width: 240px;
+      height: 240px;
+      margin-bottom: 5px;
+    }
+
+    header {
+        padding-bottom: 10px;
+    }
+
+    header h2, header .social {
+        display: none;
+    }
+
+    header h1 {
+        text-align: center;
+        display: block;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: 'Cabin Sketch', cursive;
+        margin-right: 8px;
+    }
+
+    nav li a {
+        text-decoration: none;
+        color: #930;
+    }
+
+    .recipe .details {
+        width: 90%;
+        margin: 0 auto;
+        background-color: #FFF;
+        border-radius: 15px;
+        border: 2px solid #930;
+    }
+
+    .recipe .details img {
+        width: 220px;
+        height: 220px;
+        margin-top: 10px;
+    }
+
+    .recipe .details dt, .recipe .details dd {
+        display: block;
+    }
+
+    .recipe .details .wrapper li {
+        text-align: left;
+        list-style-type: none;
+        padding-left: 5px;
+    }
+
+    .recipe .details .button, .recipe .details .preview-button {
+        margin: 15px auto;
+        display: block;
+    }
+
+    .recipe .details .preview-button {
+        width: 60%;
+    }
+
+    #form {
+        width: 90%;
+        margin: 0 auto;
+        background-color: #FFF;
+        padding: 10px;
+        border-radius: 15px;
+        border: 2px solid #930;
+    }
+
+   label {
+    display: block;
+   }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+        text-align: center;
+    }
+
+    .recipe {
+        display: inline-block;
+    }
+
+    header h1 {
+        font-size: 72px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .main {
+        max-width: 1240px;
+        margin: 0 auto;
+
+    }
+
+    header {
+         padding: 0 30px;
+         margin-bottom: 50px;
+    }
+
+    header h2, header .social {
+    display: inline-block;
+    }
+
+    header h1 {
+        font-size: 90px;
+        text-align: left;
+    }
+
+    h2 {
+    font-size: 30px;
+    display: inline-block;
+    }
+
+    ul {
+        max-width: 1235px;
+        margin: 0 auto;
+    }
+
+    /* -- Navigation Bar --*/
+
+    nav {
+        float: right;
+        margin-top: 20px;
+    }
+
+    nav li {
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: 'Cabin Sketch', cursive;
+    }
+
+    nav li:nth-child(1) {
+        padding-left: 0;
+        border-left: none;
+    }
+
+    nav li a {
+        text-decoration: none;
+        color: #930;
+        float: left;
+        font-size: 22px;
+        padding: 12px;
+    }
+
+    nav li a:hover {
+        color: #600;
+        -webkit-transform: rotate(-10deg) scale(1.2);
+        -moz-transform: rotate(-10deg) scale(1.2);
+        -o-transform: rotate(-10deg) scale(1.2)
+    }
+
+    /* -- Social Sprites --*/
+    .social {
+        float: right;
+        margin-right: 15px;
+    }
+
+    /* Recipes UL Styling --*/
+
+    .recipe {
+      display: inline-block;
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .recipe > img {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 5px;
+    }
+
+    .recipe > img:hover {
+        opacity: 0.5;
+    }
+
+    /*-- Recipes details Styling --*/
+
+    .recipe .details {
+      position: absolute;
+      display: none;
+      background-color: #FFF;
+      width: 70%;
+      left: 15%;
+      padding: 8px;
+      border-radius: 15px;
+      border: 2px solid #930;
+      max-width: 914px;
+    }
+
+    .recipe .details h3 {
+        font-size: 40px;
+    }
+
+    .recipe .details img {
+        width: 350px;
+        height: 350px;
+        float: left;
+    }
+
+    .recipe-list {
+        padding-left: 370px;
+    }
+
+    .recipe-list dt {
+        color: #930;
+    }
+
+    .recipe-list dl {
+        display: inline;
+    }
+
+    .recipe-list ul {
+        padding-left: 0;
+        max-width: 320px;
+    }
+
+    .recipe .details li {
+        list-style: square inside;
+        text-align: left;
+    }
+
+    .recipe .details .social {
+        text-align: center;
+        padding: 20px 29px 0 5px;
+
+    }
+
+    .wrapper {
+        float: left;
+    }
+
+    .recipe .details .preview-button, .button {
+    display: inline-block;
+    color: white;
+    margin-top: 15px;
+    text-shadow: #888 2px 2px 2px;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #ff9900;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(36, 100%, 50%)), to(hsl(12, 100%, 50%)));
+    background-image: -webkit-linear-gradient(top, hsl(36, 100%, 50%), hsl(12, 100%, 50%));
+    background-image: -moz-linear-gradient(top, hsl(36, 100%, 50%), hsl(12, 100%, 50%));
+    background-image: -o-linear-gradient(top, hsl(36, 100%, 50%), hsl(12, 100%, 50%));
+    background-image: -ms-linear-gradient(top, hsl(36, 100%, 50%), hsl(12, 100%, 50%));
+    background-image: linear-gradient(top, hsl(36, 100%, 50%), hsl(12, 100%, 50%));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ff9900', EndColorStr='#ff3300');
+    box-shadow: 2px 2px 8px #888;
+    }
+
+    .recipe .details .button {
+        float: left;
+        width: 140px;
+        font-size: 30px;
+        text-align: center;
+        padding: 15px;
+        margin: 20px 0 0 65px ;
+    }
+
+    .recipe .details .preview-button {
+        width: 140px;
+    }
+
+    .recipe .details dd {
+        font-size: 40px;
+    }
+
+    /*-- Form Styling --*/
+
+    #form {
+      position: absolute;
+      background-color: #FFF;
+      width: 40%;
+      left: 25%;
+      padding: 10px;
+      border-radius: 15px;
+      border: 2px solid #930;
+    }
+
+    #form h3 {
+        font-family: 'Cabin Sketch', cursive;
+        color: #f03;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    label {
+        width: 180px;
+        display: inline-block;
+        text-align: right;
+    }
+
+    #form .button {
+        width: 100px;
+        padding: 5px;
+        font-size: 16px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .field {
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    .field input {
+        width: 240px;
+    }
+
+    .field textarea {
+        width: 240px;
+        height: 200px;
+    }
+
+    .field .preview {
+        float: right;
+    }
+
+    .field .upload {
+        width: 120px;
+        height: 120px;
+        padding: 40px;
+        border: 4px dashed #888;
+    }
+
+    #cooking-time, #prep-time {
+        width: 30px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
