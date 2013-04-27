@@ -39,6 +39,11 @@ ul {
     padding: 0;
 }
 
+.preview {
+    font-size: 3em;
+    color: white;
+}
+
 /* -- Social Sprites --*/
 
 .social li {
@@ -149,8 +154,13 @@ footer {
       margin-bottom: 5px;
     }
 
+    .recipe .details {
+        width: 250px;
+    }
+
     header {
         padding-bottom: 10px;
+        padding-top: 40px;
     }
 
     header h2, header .social {
@@ -178,14 +188,6 @@ footer {
         color: #930;
     }
 
-    .recipe .details {
-        width: 90%;
-        margin: 0 auto;
-        background-color: #FFF;
-        border-radius: 15px;
-        border: 2px solid #930;
-    }
-
     .recipe .details img {
         width: 220px;
         height: 220px;
@@ -211,19 +213,25 @@ footer {
         width: 60%;
     }
 
-    #form {
-        width: 90%;
-        margin: 0 auto;
-        background-color: #FFF;
-        padding: 10px;
-        border-radius: 15px;
-        border: 2px solid #930;
+    label {
+        display: block;
     }
 
-   label {
-    display: block;
-   }
+    .steps {
+        text-align: center;
+        list-style-type: none;
+        font-size: 52px;
+        color: white;
+    }
 
+    #steps-preview > h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #steps-preview li {
+        font-size: 0.8em;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -235,8 +243,19 @@ footer {
         display: inline-block;
     }
 
+    .recipe .details {
+        width: 600px;
+    }
+
     header h1 {
         font-size: 72px;
+    }
+
+    .steps {
+        text-align: center;
+        list-style-type: none;
+        font-size: 72px;
+        color: white;
     }
 
 }
@@ -249,7 +268,7 @@ footer {
     }
 
     header {
-         padding: 0 30px;
+         padding: 20px 30px 0 30px;
          margin-bottom: 50px;
     }
 
@@ -319,28 +338,20 @@ footer {
       text-align: left;
     }
 
-    .recipe > img {
+    .recipe a > img, .recipe > img{
       width: 300px;
       height: 300px;
       margin-bottom: 5px;
     }
 
-    .recipe > img:hover {
+    .recipe a > img:hover {
         opacity: 0.5;
     }
 
     /*-- Recipes details Styling --*/
 
     .recipe .details {
-      position: absolute;
-      display: none;
-      background-color: #FFF;
-      width: 70%;
-      left: 15%;
-      padding: 8px;
-      border-radius: 15px;
-      border: 2px solid #930;
-      max-width: 914px;
+        width: 900px;
     }
 
     .recipe .details h3 {
@@ -348,8 +359,8 @@ footer {
     }
 
     .recipe .details img {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
         float: left;
     }
 
@@ -427,16 +438,6 @@ footer {
 
     /*-- Form Styling --*/
 
-    #form {
-      position: absolute;
-      background-color: #FFF;
-      width: 40%;
-      left: 25%;
-      padding: 10px;
-      border-radius: 15px;
-      border: 2px solid #930;
-    }
-
     #form h3 {
         font-family: 'Cabin Sketch', cursive;
         color: #f03;
@@ -485,6 +486,15 @@ footer {
 
     #cooking-time, #prep-time {
         width: 30px;
+    }
+
+    .steps {
+      font-size: 72px;
+      color: white;
+    }
+
+    .steps li {
+      list-style-type: none;
     }
 
 
